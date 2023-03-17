@@ -1,0 +1,20 @@
+<div class="container">
+<table class="table mt-4 col-5">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">user name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.userName }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <!-- Content here -->
+  <router-outlet></router-outlet>
+</div>
